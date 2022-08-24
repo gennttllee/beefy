@@ -1,0 +1,132 @@
+.section {
+    position: fixed;
+    height: 60vh;
+    width: 50rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 20%;
+    bottom: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem 100rem rgba(128, 128, 128, 0.425);
+    overflow: hidden;
+    z-index: 5;
+}
+
+.cancel {
+    background-color: inherit;
+    border: none;
+    color: white;
+    font-size: 1.7rem;
+    padding: .3rem 0 0;
+    margin: 0 1rem 0 0;
+}
+
+.icon {
+    width: 2rem;
+}
+
+.head {
+    margin: 0 0 0 1rem;
+    padding: 0;
+    font-weight: normal;
+}
+
+.div {
+    width: 30%;
+    padding: 2rem;
+}
+
+.diver {
+    width: 70%;
+    background-color: #232843;
+}
+
+.image {
+    width: 60%;
+}
+
+.h2, .h3 {
+    font-weight: normal;
+}
+
+.h2 {
+    margin: 1rem 0 .5rem;
+}
+
+.h3, .p {
+    margin: 0 0 .5rem;
+}
+
+.headContain {
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+    align-items: center;
+    background-color: #121212;
+}
+
+.clover {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    margin: .5rem 0 0;
+}
+
+.btn {
+    background-color: #343955;
+    color: white;
+    width: 48%;
+    border: none;
+    height: 5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.imageBackground {
+    background-color: white;
+    border-radius: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0 0 1rem;
+}
+
+@media screen and (max-width : 800px) {
+    .div{
+        display: none;
+    }
+
+    .section{
+        width: 80%;
+    }
+
+    .diver{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .btn{
+        width: 95%;
+        height: 11vh;
+    }
+
+    .imageBackground{
+        height: 50%;
+    }
+
+    .icon{
+        width: 3vh;
+    }
+}

@@ -1,0 +1,26 @@
+.btn{
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: none;
+    padding: .5rem 0 .5rem 1rem;
+    margin: 0;
+    background-color:inherit;
+    color: inherit;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.btn:hover{
+    background-color: rgb(76, 77, 94);
+}
+
+.div{
+    background-color: #303550;
+    position: absolute;
+    width: 70vw;
+    height: fit-content;
+    top: 2.5rem;
+    color: #D0D0DA;
+    border: 2px solid #393F60;
+}

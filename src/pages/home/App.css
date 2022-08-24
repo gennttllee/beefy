@@ -1,0 +1,474 @@
+.section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0 1rem;
+}
+
+.length {
+    color: white;
+    background-color: red;
+    padding: .2rem .5rem;
+    border-radius: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.div {
+    position: relative;
+    height: 2.8rem;
+    width: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #56586c;
+    background-color: #292d46;
+    border-radius: .4rem;
+}
+
+.show {
+    position: absolute;
+    background-color: #292d46;
+    color: #9c9eb5;
+    top: -3rem;
+    text-transform: capitalize;
+}
+
+.peanut {
+    width: auto;
+    white-space: nowrap;
+    margin: .5rem 1rem;
+}
+
+.img {
+    width: 1.5rem;
+    border-radius: 100%;
+    height: 1.5rem;
+}
+
+.buttonContainer {
+    margin: 1rem 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttonCover {
+    border: 1px solid #3f404e;
+    background-color: #292d46;
+    border-radius: .4rem;
+    color: #9c9eb5;
+    height: fit-content;
+}
+
+.buttonCover1 {
+    border: 1px solid #3f404e;
+    background-color: #292d46;
+    border-radius: .4rem;
+    color: #9c9eb5;
+    height: fit-content;
+}
+
+.singleButton {
+    border-radius: .4rem;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    padding: .6rem 1rem;
+}
+
+.singleButton:hover {
+    color: white;
+    outline: none;
+}
+
+.singleButton:focus {
+    background-color: #434557;
+    color: white;
+    outline: none;
+}
+
+.singleButton1 {
+    border-radius: .4rem;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    padding: .6rem 1rem;
+}
+
+.singleButton1:hover {
+    background-color: #434557;
+    color: white;
+}
+
+.singleButton1:active {
+    background: #59A662;
+}
+
+.singleButton1:focus {
+    background: #59A662;
+    color: white;
+    outline: none;
+}
+
+.buttonContainer1 {
+    display: none;
+}
+
+.div2 {
+    margin: 2rem 0 1rem;
+    padding: 1.5rem 0 1rem;
+    background: #2D3153;
+    border-radius: .9rem;
+    border: 1px solid #3b416b;
+}
+
+.inputDiv {
+    margin: 0 0 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    background-color: #1B1E31;
+    border-radius: .4rem;
+}
+
+.inputDiv1 {
+    display: none;
+}
+
+.input {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    height: 2rem;
+    width: 17rem;
+    padding-left: 1rem;
+}
+
+.icon {
+    margin-right: 1rem;
+}
+
+.diver {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+}
+
+.deposit {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.specificDiv {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+
+.specificB {
+    border: none;
+    color: inherit;
+    background-color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.specificButtonDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.king {
+    margin: 0 0-.2rem 0 ;
+}
+
+.king1 {
+    margin: -.4rem 0 0;
+}
+
+.specificP {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.wallet2 {
+    margin: 0 1rem 0 0;
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    background-color: inherit;
+    color: #9c9eb5;
+}
+
+.connect {
+    border: none;
+    background: #59A662;
+    color: white;
+    padding: .65rem 2rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 1rem 0;
+}
+
+.connect:hover {
+    background: #69c473;
+}
+
+.h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.commentP {
+    margin: 0 0 1rem;
+}
+
+.lastDiv {
+    margin: 0 0 0 2rem;
+    color: #D0D0DA;
+}
+
+.wallet1 {
+    margin: 0 0 0 -2rem;
+    display: flex;
+    width: 18%;
+    justify-content: space-between;
+    background-color: inherit;
+    color: #9c9eb5;
+}
+
+@media screen and (max-width : 1300px) {
+    .container {
+        display: none;
+    }
+
+    .vaultBtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+        border: none;
+        padding: .5rem 0 .5rem 1rem;
+        margin: 0;
+        background-color: inherit;
+        color: inherit;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+
+    .vaultBtn:hover {
+        background-color: rgb(76, 77, 94);
+    }
+
+    .sortBy {
+        color: #9c9eb5;
+    }
+
+    .spanSort {
+        margin-left: .3rem;
+        color: white;
+        text-transform: capitalize;
+    }
+
+    .singleButton5 {
+        border-radius: .4rem;
+        border: none;
+        background-color: inherit;
+        color: inherit;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        height: 2.1rem;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .inputDiv1 {
+        position: relative;
+        display: block;
+        width: 25%;
+        background-color: #1B1E31;
+        border-radius: .4rem;
+    }
+
+    .map {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .buttonCover1 {
+        display: none;
+    }
+
+    .singleButton2 {
+        border-radius: .4rem;
+        border: none;
+        background-color: inherit;
+        color: inherit;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .buttonAbs {
+        position: absolute;
+        width: 50vw;
+        height: 50vh;
+        overflow-y: auto;
+        background-color: #1B1E31;
+        color: white;
+        top: 3rem;
+        bottom: 3rem;
+        left: 0;
+        z-index: 5;
+    }
+
+    .buttonAbs1 {
+        position: absolute;
+        width: 50vw;
+        height: fit-content;
+        overflow-y: auto;
+        background-color: #1B1E31;
+        color: white;
+        top: 3rem;
+        bottom: 3rem;
+        left: 0;
+        z-index: 5;
+    }
+
+    .checkbox {
+        background-color: transparent;
+        color: white;
+        width: 1.5rem;
+        height: 1.5rem;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -o-appearance: none;
+        border: 1px solid #545c8d;
+        ;
+    }
+
+    .checkbox:checked {
+        -moz-appearance: checkbox;
+        -webkit-appearance: checkbox;
+        -moz-appearance: checkbox;
+        accent-color: #292d46;
+        outline: 1px solid #545c8d;
+        ;
+    }
+
+    .buttonCover2 {
+        border: 1px solid #3f404e;
+        background-color: #292d46;
+        border-radius: .4rem;
+        color: #9c9eb5;
+        width: 20%;
+        height: 2.1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        position: relative;
+    }
+
+    .buttonContainer1 {
+        margin: 1rem 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .buttonCover {
+        width: 100%;
+    }
+
+    .singleButton1 {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .spanLove {
+        color: white;
+    }
+
+    .length {
+        color: white;
+        background-color: red;
+        padding: .2rem .5rem;
+        border-radius: 100%;
+    }
+
+    .wallet1, .wallet2 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width : 800px) {
+    .buttonContainer1 {
+        display: block;
+    }
+
+    .singleButton2 {
+        justify-content: flex-start;
+        width: 95%;
+    }
+
+    .icon {
+        margin-right: 1rem;
+    }
+
+    .icon1 {
+        justify-self: flex-end;
+        margin: 0 1px 0 auto;
+    }
+
+    .buttonCover2 {
+        border: 1px solid #3f404e;
+        background-color: #292d46;
+        border-radius: .4rem;
+        color: #9c9eb5;
+        width: 100%;
+        margin: 1rem 0;
+        height: 2.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .diver {
+        display: block;
+    }
+
+    .inputDiv {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .inputDiv1 {
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+    .buttonCover {
+        width: 100%;
+    }
+
+    .singleButton1 {
+        width: 33%;
+    }
+}

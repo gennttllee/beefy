@@ -1,0 +1,316 @@
+.image {
+    width: 7.5rem;
+}
+
+.div {
+    padding-top: 1.3rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    justify-content: space-between;
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.li {
+    color: #bcc0e1;
+    padding: 0 0 .3rem;
+}
+
+.li:hover {
+    color: white;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    color: #bcc0e1;
+}
+
+.btn1 {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    color: #bcc0e1;
+    gap: .5rem;
+}
+
+.quest {
+    width: 1.3rem;
+}
+
+.lang {
+    display: block;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: .7rem 1.5rem;
+    width: 100%;
+}
+
+.lang:hover {
+    background-color: #494c5d;
+}
+
+.abs {
+    background-color: #2f3553;
+    position: absolute;
+    top: 2rem;
+    padding: .5rem 0;
+    border-radius: .7rem;
+}
+
+.empty {
+    position: relative;
+    display: block;
+}
+
+.so {
+    position: relative;
+}
+
+.lute {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    position: absolute;
+    top: 3rem;
+    width: 13rem;
+    padding: 1rem;
+    background-color: #242737;
+}
+
+.p1 {
+    margin: 0;
+    padding: 0;
+}
+
+.none {
+    background-color: transparent;
+    border: none;
+    color: #bcc0e1;
+    font-size: 1.3rem;
+}
+
+.span {
+    width: .7rem;
+    height: .7rem;
+    border-radius: 100%;
+    background-color: green;
+}
+
+.spanner {
+    width: 2rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #56586c;
+    background-color: #1B1E31;
+    border-radius: .5rem;
+}
+
+.connect {
+    border: none;
+    background: #59A662;
+    color: white;
+    padding: .65rem 2rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.visible {
+    display: none;
+}
+
+@media screen and (max-width : 1300px) {
+
+    @keyframes move {
+        from {
+            right: -20rem;
+        }
+
+        to {
+            right: 0;
+        }
+    }
+
+    .slide {
+        width: 17rem;
+        background-color: #121212;
+        height: 100%;
+    }
+
+    .slider {
+        position: fixed;
+        animation: move;
+        animation-duration: .3s;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        z-index: 6;
+    }
+
+    .emptyDiv {
+        width: auto;
+        flex-grow: calc(1);
+        height: 100%;
+        backdrop-filter: blur(8px);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .none1 {
+        background-color: transparent;
+        border: none;
+        color: #bcc0e1;
+        font-size: 1.3rem;
+        padding: .5rem 1rem;
+        border-radius: 100%;
+    }
+
+    .hr {
+        border: solid #3f4150;
+        border-width: 1px 0 0;
+    }
+
+    .none1:hover {
+        background-color: #262a43;
+    }
+
+    .btnDiv {
+        display: block;
+        width: 85%;
+        text-align: right;
+        margin: 1rem 0;
+    }
+
+    .visible {
+        display: block;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 1.4rem;
+    }
+
+    .column {
+        list-style: none;
+        display: block;
+        padding: 0;
+    }
+
+    .col {
+        margin: 2rem 0;
+        padding: 0 .7rem;
+        text-transform: capitalize;
+    }
+
+    .col1 {
+        text-transform: capitalize;
+        margin: 2rem 0;
+        padding: 0 .7rem;
+    }
+
+    .newBtn {
+        width: 100%;
+        margin: 1rem 0;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        color: #bcc0e1;
+        padding: 0 0 0 1rem;
+    }
+
+    .newBtn1 {
+        font-size: 18px;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        color: #bcc0e1;
+        gap: .5rem;
+    }
+
+    .newQuest {
+        width: 1.3rem;
+    }
+
+    .newEmpty {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 2rem 0 1rem;
+        padding-left: 1rem;
+    }
+
+    .newAbs {
+        background-color: #2f3553;
+        position: absolute;
+        top: -9rem;
+        padding: .5rem 0;
+        border-radius: .7rem;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    .last {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 600px){
+    .image{
+        width: 5rem;
+    }
+
+    .connect{
+        padding: .5rem .5rem;
+        font-size: 14px;
+        margin: 0 -1rem 0 0;
+    }
+
+    .lute {
+        width: 50vw;
+        padding: .5rem .5rem;
+    }
+
+    .spanner{
+        width: 2rem;
+        height: 2rem;
+    }
+}

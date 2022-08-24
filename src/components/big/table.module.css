@@ -1,0 +1,169 @@
+.div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 .5rem 1.5rem 1.5rem;
+    flex-wrap: wrap;
+}
+
+.child {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 30%;
+}
+
+.container {
+    border: 1px solid #3b416b;
+}
+
+.corner {
+    width: 1.5rem;
+    margin: 0;
+    clip-path: polygon(50% 0%, 100% 0, 100% 45%, 57% 100%, 2% 100%, 0% 60%, 0 0);
+}
+
+.imgContainer {
+    display: flex;
+}
+
+.image {
+    width: 2rem;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.image1 {
+    width: 2rem;
+    border-radius: 100%;
+    margin: 0 0 0 -1rem;
+}
+
+.paraDiv {
+    margin: 0 1rem;
+}
+
+.para {
+    text-transform: uppercase;
+    margin: 0 0 .3rem;
+    color: #DB8332;
+}
+
+.btn {
+    border: none;
+    background-color: #5c5f7a;
+    color: white;
+    margin-right: 1rem;
+    padding: .3rem 1rem;
+    text-transform: uppercase;
+}
+
+.btn1 {
+    border: none;
+    color: white;
+    background-color: rgba(219, 131, 50, 0.3);
+    padding: .3rem 1rem;
+    text-transform: uppercase;
+
+}
+
+.icon {
+    color: orange;
+    margin-right: .5rem;
+}
+
+.para2 {
+    margin: 0;
+}
+
+.para3 {
+    margin: 0;
+    color: white;
+}
+
+.deposit {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin-right: 1rem;
+}
+
+.apy {
+    display: flex;
+    justify-content: space-between;
+    width: 17%;
+    color: orange;
+}
+
+.apy1 {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin-right: 1rem;
+    color: inherit;
+}
+
+.slash {
+    margin: 0;
+    color: #9595B2;
+    text-align: right;
+    text-decoration: line-through;
+}
+
+.signal {
+    color: #59A662;
+    margin-left: .5rem;
+}
+
+.word {
+    display: none;
+}
+
+@media screen and (max-width : 1300px) {
+    .word {
+        display: block;
+        margin: 0;
+        color: #9595B2;
+    }
+
+    .deposit {
+        width: 22%;
+    }
+
+    .apy{
+        width: 22%;
+    }
+
+    .apy1{
+        width: 22%;
+    }
+
+    .child {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .deposit {
+        width: 100%;
+        margin: .5rem ;
+        justify-content: space-around;
+    }
+
+    .apy1 {
+        width: 100%;
+        justify-content: space-around;
+        margin: .5rem ;
+    }
+
+    .apy {
+        justify-content: space-around;
+        margin: .5rem ;
+        width: 100%;
+    }
+
+    .paraDiv{
+        margin: 0;
+    }
+}

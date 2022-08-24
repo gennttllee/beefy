@@ -21,3 +21,42 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+let data =[]
+
+const del =(item)=>{
+  const newData = data.filter(element=>{
+    return parseInt(element.id) !== parseInt(item)
+  })
+  data = newData;
+  let mappedData = data.map((item, index)=>{
+  return `<li key= ${index}> <span>${item.text} </span> <button id=${item.id}> delete </button> </li>`
+})
+document.getElementById('div').innerHTML = mappedData;
+    data.forEach((item, index)=>{
+     document.getElementById(`${item.id}`).addEventListener('click', ()=>del(item.id)) 
+  })
+}
+
+
+const submitMe =(e)=>{
+  e.preventDefault();
+  const text = document.getElementById('text').value
+  const num = Math.floor((Math.random()* 8899) + 1)
+  data.push({text, id:`${num}`})
+  let mappedData = data.map((item, index)=>{
+  return `<li key= ${index}> <span>${item.text} </span> <button id=${item.id}> delete </button> </li>`
+})
+document.getElementById('div').innerHTML = mappedData;
+document.getElementById('form').reset()
+  data.forEach((item, index)=>{
+     document.getElementById(`${item.id}`).addEventListener('click', ()=>del(item.id)) 
+  })
+};
+document.getElementById('form').addEventListener('submit', submitMe);
+
+
+
+
+
