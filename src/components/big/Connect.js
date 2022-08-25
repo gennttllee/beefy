@@ -15,7 +15,7 @@ const Connect = ({wallet, setWallet, connectRef}) => {
         <div>
             <div className={styles.div}>
                 <div> <img className={styles.image} src={logo} alt='logo' /> </div>
-                <List class={styles.ul} name={styles.li1} name1={styles.li} />
+                <List class={styles.ul} name={styles.li1} name1={styles.li}  />
                 <div className={styles.flex}>
                     <Language btn={styles.btn}
                         quest={styles.quest}

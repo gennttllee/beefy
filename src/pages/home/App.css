@@ -11,6 +11,14 @@
     border-radius: 100%;
 }
 
+.error{
+    position: absolute;
+    color: rgb(234, 105, 105);
+    width: fit-content;
+    top: -2.5rem;
+    left: 1rem;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -135,6 +143,7 @@
     width: fit-content;
     background-color: #1B1E31;
     border-radius: .4rem;
+    position: relative;
 }
 
 .inputDiv1 {
@@ -148,6 +157,8 @@
     height: 2rem;
     width: 17rem;
     padding-left: 1rem;
+    color: white;
+    font-weight: normal;
 }
 
 .icon {
@@ -416,6 +427,9 @@
         display: none;
     }
 
+    .input{
+        width: 85%;
+    }
 }
 
 @media screen and (max-width : 800px) {

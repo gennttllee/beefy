@@ -53,9 +53,11 @@ const Table = ({ item }) => {
             <p className={styles.para2}>${item.tml}M</p>
           </div>
           <div>
-          <p className={styles.word}>SAFETY</p>
+            <p className={styles.word}>SAFETY</p>
             <p className={styles.para2}>{item.safety}
-              <FontAwesomeIcon className={styles.signal} icon={faSignal} />
+              <a target='blank' href='https://app.beefy.com/vault/venus-bnb' >
+                <FontAwesomeIcon className={styles.signal} icon={faSignal} />
+              </a>
             </p>
           </div>
         </div>

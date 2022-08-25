@@ -24,6 +24,12 @@
 .li {
     color: #bcc0e1;
     padding: 0 0 .3rem;
+    text-decoration: none;
+}
+
+.li1{
+    color: white;
+    text-decoration: none;
 }
 
 .li:hover {
@@ -43,6 +49,7 @@
     gap: .5rem;
     align-items: center;
     color: #bcc0e1;
+    text-decoration: none;
 }
 
 .btn1 {
@@ -224,12 +231,22 @@
         margin: 2rem 0;
         padding: 0 .7rem;
         text-transform: capitalize;
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+
+    .col:hover, .col1:hover{
+        color: white;
     }
 
     .col1 {
         text-transform: capitalize;
         margin: 2rem 0;
         padding: 0 .7rem;
+        color: #bcc0e1;
+        text-decoration: none;
+        display: block;
     }
 
     .newBtn {
@@ -242,6 +259,7 @@
         align-items: center;
         color: #bcc0e1;
         padding: 0 0 0 1rem;
+        text-decoration: none;
     }
 
     .newBtn1 {

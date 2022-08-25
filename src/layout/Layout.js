@@ -21,27 +21,27 @@ const Layout = ({ children, wallet, setWallet, connectRef }) => {
             </main>
             <footer className={styles.footer}>
                 <div className={styles.ulList}>
-                    <a className={styles.linker} href='/'>Vote</a>
-                    <a  className={styles.linker} href='/'>Stats</a>
-                    <a  className={styles.linker} href='/' >Blog</a>
-                    <a  className={styles.linker} href='/'>Docs</a>
-                    <a  className={styles.linker} href='/'>Audit </a>
-                    <a  className={styles.linker} href='/'> Media Kit</a>
+                    <a target='blank' className={styles.linker} href='https://vote.beefy.finance/#/'>Vote</a>
+                    <a target='blank' className={styles.linker} href='https://dashboard.beefy.com/'>Stats</a>
+                    <a target='blank' className={styles.linker} href='https://beefy.com/articles/' >Blog</a>
+                    <a target='blank' className={styles.linker} href='https://docs.beefy.finance/'>Docs</a>
+                    <a target='blank' className={styles.linker} href='https://github.com/beefyfinance/beefy-audits'>Audit </a>
+                    <a  target='blank' className={styles.linker} href='https://beefy.com/media-kit/'> Media Kit</a>
                 </div>
                 <div className={styles.ulList1}>
-                    <a className={styles.link} href='/'>
+                    <a target='blank' className={styles.link} href='https://github.com/beefyfinance'>
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
-                    <a className={styles.link} href='/'>
+                    <a target='blank' className={styles.link} href='https://t.me/beefyfinance'>
                         <FontAwesomeIcon icon={faTelegram} />
                     </a>
-                    <a className={styles.link} href='/'>
+                    <a target='blank' className={styles.link} href='https://discord.com/invite/yq8wfHd'>
                         <FontAwesomeIcon icon={faDiscord} />
                     </a>
-                    <a className={styles.link} href='/'>
+                    <a target='blank' className={styles.link} href='https://twitter.com/beefyfinance'>
                         <FontAwesomeIcon icon={faTwitter} />
                     </a>
-                    <a className={styles.link} href='/'>
+                    <a target='blank' className={styles.link} href='https://www.reddit.com/r/Beefy/'>
                         <FontAwesomeIcon icon={faRedditAlien} />
                     </a>
                 </div>

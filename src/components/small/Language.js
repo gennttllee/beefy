@@ -8,10 +8,10 @@ const Language = (props) => {
 
     return (
         <>
-            <button className={props.btn}>
+            <a href="https://app.1inch.io/#/56/swap/BNB/BIFI" className={props.btn}>
                 <img className={props.quest} src={icon} alt='icon' />
                 <span> $432</span>
-            </button>
+            </a>
             <div className={props.empty}>
                 <button onClick={() => setShow(!show)} className={props.btn1}>
                     <span>EN</span>

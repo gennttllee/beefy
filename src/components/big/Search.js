@@ -1,8 +1,11 @@
 import Sorted from "../small/Sorted"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDown, faAngleUp, faSearch, faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons"
+import response from "../../data/response"
+import { useState } from "react"
 
 const Search = ({ sort, setSort, divRef, setResult, setName, select, setSelect, result, name, setShows }) => {
+    const [changes, setChanges] = useState(['req'])
 
     const wallet = (data) => {
         let req = [...result]
@@ -130,12 +133,30 @@ const Search = ({ sort, setSort, divRef, setResult, setName, select, setSelect, 
         }
     }
 
+    const changeInput = (e) => {
+        let req = []
+        let value = String(e.target.value).toLowerCase();
+        req = result.filter(item => item.name === value || item.name1 === value)
+        setChanges(req)
+        console.log(changes)
+        if (req.length > 0) {
+            setResult(req)
+        } else {
+            setResult(response)
+        }
+
+        if (value === '') {
+            setChanges(['req'])
+        }
+    }
 
     return (
         <div className="diver">
             <div className="inputDiv">
-                <input className="input" type='text' placeholder='search...' />
+                <input onChange={changeInput} className="input" type='text' placeholder='search...' />
                 <FontAwesomeIcon className="icon" icon={faSearch} />
+                {changes.length < 1 && <p className="error">No search result found</p>}
+
             </div>
             <div className="wallet1">
                 <div className="specificDiv">
@@ -144,18 +165,18 @@ const Search = ({ sort, setSort, divRef, setResult, setName, select, setSelect, 
                         <button onClick={() => wallet('ascending')} className="specificB">
                             <FontAwesomeIcon className="king" icon={faCaretUp} />
                         </button>
-                        <button onClick={()=> wallet('descending')} className="specificB">
-                            <FontAwesomeIcon className="king1"  icon={faCaretDown} />
+                        <button onClick={() => wallet('descending')} className="specificB">
+                            <FontAwesomeIcon className="king1" icon={faCaretDown} />
                         </button>
                     </div>
                 </div>
                 <div className="specificDiv">
                     <p className="specificP">Deposited</p>
                     <div className="specificButtonDiv">
-                        <button onClick={()=> deposited('ascending')} className="specificB">
+                        <button onClick={() => deposited('ascending')} className="specificB">
                             <FontAwesomeIcon className="king" icon={faCaretUp} />
                         </button>
-                        <button onClick={()=> deposited('descending')} className="specificB">
+                        <button onClick={() => deposited('descending')} className="specificB">
                             <FontAwesomeIcon className="king1" icon={faCaretDown} />
                         </button>
                     </div>
@@ -165,10 +186,10 @@ const Search = ({ sort, setSort, divRef, setResult, setName, select, setSelect, 
                 <div className="specificDiv">
                     <p className="specificP">Apy</p>
                     <div className="specificButtonDiv">
-                        <button onClick={()=> apy('ascending')} className="specificB">
+                        <button onClick={() => apy('ascending')} className="specificB">
                             <FontAwesomeIcon className="king" icon={faCaretUp} />
                         </button>
-                        <button onClick={()=> apy('descending')} className="specificB">
+                        <button onClick={() => apy('descending')} className="specificB">
                             <FontAwesomeIcon className="king1" icon={faCaretDown} />
                         </button>
                     </div>
@@ -176,10 +197,10 @@ const Search = ({ sort, setSort, divRef, setResult, setName, select, setSelect, 
                 <div className="specificDiv">
                     <p className="specificP">daily</p>
                     <div className="specificButtonDiv">
-                        <button onClick={()=> daily('ascending')} className="specificB">
+                        <button onClick={() => daily('ascending')} className="specificB">
                             <FontAwesomeIcon className="king" icon={faCaretUp} />
                         </button>
-                        <button onClick={()=> daily('descending')} className="specificB">
+                        <button onClick={() => daily('descending')} className="specificB">
                             <FontAwesomeIcon className="king1" icon={faCaretDown} />
                         </button>
                     </div>
@@ -189,10 +210,10 @@ const Search = ({ sort, setSort, divRef, setResult, setName, select, setSelect, 
                 <div className="specificDiv">
                     <p className="specificP">tml</p>
                     <div className="specificButtonDiv">
-                        <button onClick={()=> tml('ascending')} className="specificB">
+                        <button onClick={() => tml('ascending')} className="specificB">
                             <FontAwesomeIcon className="king" icon={faCaretUp} />
                         </button>
-                        <button onClick={()=> tml('descending')} className="specificB">
+                        <button onClick={() => tml('descending')} className="specificB">
                             <FontAwesomeIcon className="king1" icon={faCaretDown} />
                         </button>
                     </div>
@@ -200,10 +221,10 @@ const Search = ({ sort, setSort, divRef, setResult, setName, select, setSelect, 
                 <div className="specificDiv">
                     <p className="specificP">safety</p>
                     <div className="specificButtonDiv">
-                        <button onClick={()=> safety('ascending')} className="specificB">
+                        <button onClick={() => safety('ascending')} className="specificB">
                             <FontAwesomeIcon className="king" icon={faCaretUp} />
                         </button>
-                        <button onClick={()=> safety('descending')} className="specificB">
+                        <button onClick={() => safety('descending')} className="specificB">
                             <FontAwesomeIcon className="king1" icon={faCaretDown} />
                         </button>
                     </div>
